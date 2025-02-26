@@ -1,5 +1,6 @@
 ﻿namespace GitHubPackage
 {
+    // This is a test class
     public class MathOps
     {
         public int Add(int a, int b)
