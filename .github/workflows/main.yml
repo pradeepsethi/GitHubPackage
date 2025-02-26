@@ -29,4 +29,4 @@ jobs:
         run: dotnet nuget add source --username pradeepsethi --password ${{ secrets.MY_PAT }} --store-password-in-clear-text --name github "https://nuget.pkg.github.com/pradeepsethi/index.json"
 
       - name: Publish the package
-        run: dotnet nuget push ./artifacts/*.nupkg --source GitHub --api-key ${{ secrets.MY_PAT }}
+        run: dotnet nuget push ./artifacts/*.nupkg --source GitHub --api-key ${{ secrets.GITHUB_TOKEN }}
